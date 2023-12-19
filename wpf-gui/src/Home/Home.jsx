@@ -4,12 +4,12 @@ import { Lesson12 } from "./Lessons/Lesson12"
 import './Home.scss'
 
 export const Home = () => {
-    const [ selectedLesson, setSelectedLesson ] = useState(null)
-    const [ selectedSection, setSelectedSection ] = useState(null)
+    const [ selectedLesson, setSelectedLesson ] = useState(11)
+    const [ selectedSection, setSelectedSection ] = useState(1)
 
     const handleSelectSection = (number) => {  
         if(number === selectedSection){
-           setSelectedSection(null) 
+           setSelectedSection(1) 
         } else{
             setSelectedSection(number)
         }
@@ -17,7 +17,7 @@ export const Home = () => {
 
     const handleSelectLesson = (count) => {  
         if(count === selectedLesson){
-            setSelectedLesson(null) 
+            setSelectedLesson(11) 
         } else{
             setSelectedLesson(count)
         }
