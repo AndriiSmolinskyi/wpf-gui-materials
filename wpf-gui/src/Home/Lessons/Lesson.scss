@@ -1,0 +1,61 @@
+.lesson-block{
+    width: 90%;
+    font-family: sans-serif;
+    padding: 20px 30px 20px 30px;
+}
+
+.title-h1{
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.main-block{
+    padding: 35px 25px;
+    background-color: rgb(221, 245, 245);
+    border: 2px solid rgb(195, 236, 236); 
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    @media screen and (max-width: 480px) {
+        padding: 30px 15px 30px 15px;
+    }
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.content__title-h3{
+    font-size: 24px;
+}
+
+.content__title-h4{
+    font-size: 20px;
+}
+
+.content__block{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.link{
+    text-decoration: none;
+    // color: rgb(121, 75, 247);
+    color: rgb(89, 85, 85);
+    text-decoration: underline;
+}
+
+.content__paragraph{
+    font-size: 18px;
+    line-height: 2;
+}
+
+.img{
+   
+    @media screen and (max-width: 480px) {
+        width: 100%;
+    }
+}

@@ -1,0 +1,28 @@
+.home{
+    max-width: 1170px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.nav{
+    width: 200px;
+    padding-top: 20px;
+
+    .nav__list__title{
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .nav__block{
+        width: 200px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav__block__item{
+        cursor: pointer;
+        font-size: 16px;
+    }
+}
