@@ -22,6 +22,12 @@ import Lesson45 from "./Lessons/Lesson45"
 import Lesson46 from "./Lessons/Lesson46"
 import Lesson47 from "./Lessons/Lesson47"
 import Lesson48 from "./Lessons/Lesson48"
+import Lesson49 from "./Lessons/Lesson49"
+import Lesson410 from "./Lessons/Lesson410"
+import Lesson411 from "./Lessons/Lesson411"
+import Lesson412 from "./Lessons/Lesson412"
+import Lesson413 from "./Lessons/Lesson413"
+import Lesson414 from "./Lessons/Lesson414"
 import './Home.scss'
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -120,6 +126,12 @@ export const Home = () => {
                                 <p className="nav__block__item" onClick={() => handleSelectLesson(46)}>Контейнери GroupBox та RadioButton</p>
                                 <p className="nav__block__item" onClick={() => handleSelectLesson(47)}>ScrollViewer. Створення прокручування</p>
                                 <p className="nav__block__item" onClick={() => handleSelectLesson(48)}>Текстові елементи керування</p>
+                                <p className="nav__block__item" onClick={() => handleSelectLesson(49)}>Елементи керування списками</p>
+                                <p className="nav__block__item" onClick={() => handleSelectLesson(410)}>ListBox</p>
+                                <p className="nav__block__item" onClick={() => handleSelectLesson(411)}>ComboBox</p>
+                                <p className="nav__block__item" onClick={() => handleSelectLesson(412)}>ListView</p>
+                                <p className="nav__block__item" onClick={() => handleSelectLesson(413)}>Створення вкладок та TabControl</p>
+                                <p className="nav__block__item" onClick={() => handleSelectLesson(414)}>Меню</p>
                             </div>
                         }
                     </ul>
@@ -150,6 +162,12 @@ export const Home = () => {
                     {selectedLesson === 46 && <Lesson46/>}
                     {selectedLesson === 47 && <Lesson47/>}
                     {selectedLesson === 48 && <Lesson48/>}
+                    {selectedLesson === 49 && <Lesson49/>}
+                    {selectedLesson === 410 && <Lesson410/>}
+                    {selectedLesson === 411 && <Lesson411/>}
+                    {selectedLesson === 412 && <Lesson412/>}
+                    {selectedLesson === 413 && <Lesson413/>}
+                    {selectedLesson === 414 && <Lesson414/>}
                 </div>
             </div>             
             
