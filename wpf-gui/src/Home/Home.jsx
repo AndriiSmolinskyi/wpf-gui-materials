@@ -28,6 +28,9 @@ import Lesson411 from "./Lessons/Lesson411"
 import Lesson412 from "./Lessons/Lesson412"
 import Lesson413 from "./Lessons/Lesson413"
 import Lesson414 from "./Lessons/Lesson414"
+import Lesson415 from "./Lessons/Lesson415"
+import Lesson416 from "./Lessons/Lesson416"
+import Lesson417 from "./Lessons/Lesson417"
 import './Home.scss'
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -132,6 +135,9 @@ export const Home = () => {
                                 <p className="nav__block__item" onClick={() => handleSelectLesson(412)}>ListView</p>
                                 <p className="nav__block__item" onClick={() => handleSelectLesson(413)}>Створення вкладок та TabControl</p>
                                 <p className="nav__block__item" onClick={() => handleSelectLesson(414)}>Меню</p>
+                                <p className="nav__block__item" onClick={() => handleSelectLesson(415)}>ToolBar</p>
+                                <p className="nav__block__item" onClick={() => handleSelectLesson(416)}>TreeView</p>
+                                <p className="nav__block__item" onClick={() => handleSelectLesson(417)}>DataGrid</p>
                             </div>
                         }
                     </ul>
@@ -168,6 +174,9 @@ export const Home = () => {
                     {selectedLesson === 412 && <Lesson412/>}
                     {selectedLesson === 413 && <Lesson413/>}
                     {selectedLesson === 414 && <Lesson414/>}
+                    {selectedLesson === 415 && <Lesson415/>}
+                    {selectedLesson === 416 && <Lesson416/>}
+                    {selectedLesson === 417 && <Lesson417/>}
                 </div>
             </div>             
             
