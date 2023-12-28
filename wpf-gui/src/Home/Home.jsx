@@ -31,6 +31,15 @@ import Lesson414 from "./Lessons/Lesson414"
 import Lesson415 from "./Lessons/Lesson415"
 import Lesson416 from "./Lessons/Lesson416"
 import Lesson417 from "./Lessons/Lesson417"
+import Lesson418 from "./Lessons/Lesson418"
+import Lesson419 from "./Lessons/Lesson419"
+import Lesson420 from "./Lessons/Lesson420"
+import Lesson51 from "./Lessons/Lesson51"
+import Lesson52 from "./Lessons/Lesson52"
+import Lesson53 from "./Lessons/Lesson53"
+import Lesson61 from "./Lessons/Lesson61"
+import Lesson62 from "./Lessons/Lesson62"
+import Lesson63 from "./Lessons/Lesson63"
 import './Home.scss'
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -138,6 +147,25 @@ export const Home = () => {
                                 <p className="nav__block__item" onClick={() => handleSelectLesson(415)}>ToolBar</p>
                                 <p className="nav__block__item" onClick={() => handleSelectLesson(416)}>TreeView</p>
                                 <p className="nav__block__item" onClick={() => handleSelectLesson(417)}>DataGrid</p>
+                                <p className="nav__block__item" onClick={() => handleSelectLesson(418)}>ProgressBar та Slider</p>
+                                <p className="nav__block__item" onClick={() => handleSelectLesson(419)}>Робота із датами. Calander та DatePicker</p>
+                                <p className="nav__block__item" onClick={() => handleSelectLesson(420)}>Робота із зображеннями. Image та InkCanvas</p>
+                            </div>
+                        }
+                        <li className="nav__list__title" onClick={() => handleSelectSection(5)}>Розділ 5. Залежність Object і властивості залежностей</li>
+                        {selectedSection === 5 && 
+                            <div className="nav__block">
+                                <p className="nav__block__item" onClick={() => handleSelectLesson(51)}>Вступ до Depency Property</p>
+                                <p className="nav__block__item" onClick={() => handleSelectLesson(52)}>Які прикріплюються властивості/attached property</p>
+                                <p className="nav__block__item" onClick={() => handleSelectLesson(53)}>Створення властивостей залежностей</p>
+                            </div>
+                        }
+                        <li className="nav__list__title" onClick={() => handleSelectSection(6)}>Розділ 6. Модель подій у WPF</li>
+                        {selectedSection === 6 && 
+                            <div className="nav__block">
+                                <p className="nav__block__item" onClick={() => handleSelectLesson(61)}>Маршрутизація подій</p>
+                                <p className="nav__block__item" onClick={() => handleSelectLesson(62)}>Події клавіатури</p>
+                                <p className="nav__block__item" onClick={() => handleSelectLesson(63)}>Події миші та фокусу</p>
                             </div>
                         }
                     </ul>
@@ -177,6 +205,15 @@ export const Home = () => {
                     {selectedLesson === 415 && <Lesson415/>}
                     {selectedLesson === 416 && <Lesson416/>}
                     {selectedLesson === 417 && <Lesson417/>}
+                    {selectedLesson === 418 && <Lesson418/>}
+                    {selectedLesson === 419 && <Lesson419/>}
+                    {selectedLesson === 420 && <Lesson420/>}
+                    {selectedLesson === 51 && <Lesson51/>}
+                    {selectedLesson === 52 && <Lesson52/>}
+                    {selectedLesson === 53 && <Lesson53/>}
+                    {selectedLesson === 61 && <Lesson61/>}
+                    {selectedLesson === 62 && <Lesson62/>}
+                    {selectedLesson === 63 && <Lesson63/>}
                 </div>
             </div>             
             
